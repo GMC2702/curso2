@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CODIGO DE FUENTES: ANTON:font-family: "Anton", sans-serif;       POPPINS:font-family: "Poppins", sans-serif;     CSANS:font-family: "Comic Neue", cursive;*/
+body{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+    font-family: "Comic Neue", cursive;
+    text-decoration: none;
+}
+
+:root{
+    --primary-color:#6DC5D1;   /*Paleta de colores*/
+    --secundary-color:#FDE49E;
+    --orange1: #FEB941;
+    --orange2: #DD761C;
+    --highlight: #179BAE;
+    --white: #fff;
+    --black: #0000;
+    --grey: #222324;
+}
+
+.padding-left-20x{
+    padding-left: 20px;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--orange1);
+    background-color: var(--secundary-color);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul{
+    list-style: none; 
+    position: absolute;
+    right: 0px;
+}
+
+nav li{
+    display: inline; /*Muestra la lista en horizontal*/
+    padding: 20px 25px; /*Espaciado entre lineas*/
+    background-color: var(--primary-color);
+}
+
+nav li a{
+    color: var(--white); /*Fuente*/
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:var(--highlight) /*Sombreado*/
+}
+
+
+/*Colores de icono*/
+a{
+    color: #f38320;
+}
+
+a:hover{
+    color: #a04e06;
+}
+
+a:link{
+    color: var(--grey);
+    text-decoration: none;
+}
+
+a:visited{
+    color: goldenrod;
+}
+
+
+
+
+
+/*pestaña servicios*/
+.servicios{
+    display: grid;
+    height: 350px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 100px;
+  }
+
+.item-servicios{
+    border: 1px solid gray;
+    align-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border-color: var(--orange1);
+
+}
+
+.title{
+    text-align: center;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--orange1)
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.icon{
+    font-size: 40px;
+}
+
+.nosotros{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding-top: 100px;
+    margin-top: 100px;
+    /*background-color: var(--secundary-color);*/
+    padding-bottom: 10%;
+    background-image: url(../images/edificios.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-attachment: fixed;
+}
+
+.imagen{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.nosotros h2{
+    color: var(--orange2);
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+
+.nosotros a{
+    color: var(--grey);
+}
+
+.button{
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 24px;
+    padding: 15px 15px 10px 15px;
+    border-radius: 20px;
+    border: 1px var(--secundary-color);
+}
+
+.button:hover{
+    background-color: var(--highlight);
+    color: var(--grey);
+}
+
+.contacto{
+    width: 100%;
+    background-color: var(--secundary-color);
+    text-transform: uppercase;
+    padding-top: 0%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    width: 100%;
+    border: 1px  solid var(--primary-color);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+label{
+    color: var(--orange2);
+    padding-top: 15px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    border: 1px  solid var(--primary-color);
+    color: var(--orange2);
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-size: 16px;
+    resize: none;
+    
+}
+
+.submit{
+    border-radius: 15px;
+    border-color: var(--primary-color);
+    width: 30%;
+    padding: 15px 10px;
+    font-size: 20px;
+    margin-left: 35%;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+}
+
+.contacto1{
+    width: 90%;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    display: grid;
+}
+
+.contacto2{
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: grid;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding-top: 40px;
+    padding-left: 0px;
+    line-height: 1.5em;
+}
+
+footer h2{
+    color: white;
+    font-size: 18px;
+}
+
+.logo-footer{
+    width: 150px;
+    height: 150px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li a{
+    color: var(--white); /*Fuente*/
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.redes li{
+    display: inline;
+    text-align: center;
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: relative;
+    animation-name: cajita;
+    animation-duration: 10s;
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes cajita {
+    /* from {background-color: orange;} */
+    /* to {background-color: greenyellow;} */
+    /* 0%   {background-color: greenyellow; left:0px; top:0px;}
+    25%  {background-color: lightcoral; left:200px; top:0px;}
+    50%  {background-color: cyan; left:200px; top:200px;}
+    /* 100% {background-color: rgb(220, 20, 130); left:0px; top:200px;} */
+
+    from {left: 0px; background-color: crimson;}
+    to {left: 300px; background-color: gold;}
+  }
+
+.cambiocolor{
+    animation-name: iconoanimado;
+    animation-duration: 3s;
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes camara{
+    from {color: #f38320;}
+    to {color: #20f355;}
+}
+
+.fotografia{
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/images/fotografo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10% 10%;
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    color: var(--white);
+}
+
+.fotografia p{
+    color: var(--white);
+}
+
+.galeria{
+    display: grid;
+    height: 350px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding-top: 75px;
+    background-image: url(/assets/images/vintage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 100px;
+}
+.galeria h3{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.photo{
+    width: 100%;
+    height: 200px;
+    position: top;
+}
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    position: center;
+    background-color: var(--grey);
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+
+.titulo h1{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+@keyframes zoom{
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+
+.disgrafico{
+    background-image: url(/assets/images/pintura.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10% 10%;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    text-decoration:underline;
+  }
+
+.disgrafico h1{
+    color: rgb(255, 10, 10);
+    text-align: center;
+    padding-right: 25%;
+    animation: color-change 1s infinite;
+  }
+
+  @keyframes color-change {
+    0% { color: rgb(229, 255, 0); }
+    50% { color: rgb(255, 10, 10); }
+    100% { color: rgb(229, 255, 0); }
+  }
+
+  .disgrafico p{
+    color: rgb(238, 42, 42);
+    text-align: center;
+    padding-right: 25%;
+  }
+  .disgraficoopciones{
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    align-content: center;
+    padding: 50px 50px 150px 50px;
+    margin: 50px 200px 50px 250px;
+    background-color: pink;
+    background-size: auto;
+  }
+
+  .disgraficoopciones2{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    position: top;
+    margin: 0px 75px 100px 250px;
+    background-image: url(/assets/images/programas.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    padding: 200px 50px 160px 10px
+  }
+
+  .desarrollo{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 40%;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    background-image: url(/assets/images/fondo.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+
+  .desarrollo h1{
+    color: var(--orange1);
+  }
+
+  .minicodigo{
+    background-color: rgb(192, 133, 255);
+    background-size: 10%;
+  }
+
+  .seo{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 35%;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    background-image: url(/assets/images/fondo\ cursor.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+
+  .botoncillo{
+    position: relative;
+    background-color: black;
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+  }
+  
+  .botoncillo:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+  }
+  
+  .botoncillo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .botoncillo:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .botoncillo:active {
+    top: 1px;
+  }
+
+  .apps{
+    text-align: center;
+    color: var(--secundary-color);
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 35%;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    background-image: url(/assets/images/telefonos.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .apps img{
+    width: 350px;
+    height: 350px;
+  }
+
+  .apps h1{
+    color: goldenrod;
+  }
+
+  .apps a{
+    color: var(--orange2);
+  }
+
+  .apps a:hover{
+    color: var(--orange1);
+  }
+
+  .apps a:link{
+    color: darkblue; 
+    text-decoration: underline;
+}
+
+.audiovisual{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 35%;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    background-image: url(/assets/images/cine.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  
+  
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+
