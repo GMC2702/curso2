@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+
+
+.h1{
+    color: crimson;
+    font-size:72px;
+    }
+
+table{
+    background-color: aqua;
+    font: 16px 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.tr{ 
+    background-color: green;
+}
+
+.td{
+    background-color: pink;
+}
